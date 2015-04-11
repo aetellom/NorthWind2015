@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Documento representa la factura o boleta y tiene una cabecera y un detalle
 namespace NorthWind.Entity
 {
     public class DocumentoBE

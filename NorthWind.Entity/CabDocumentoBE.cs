@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Cabecera de la factura o boleta
 namespace NorthWind.Entity
 {
     public class CabDocumentoBE

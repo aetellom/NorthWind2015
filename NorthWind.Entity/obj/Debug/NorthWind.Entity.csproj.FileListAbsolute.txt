@@ -3,3 +3,8 @@ C:\NET\Sesion3\NorthWindSolution\NorthWind.Entity\bin\Debug\NorthWind.Entity.pdb
 C:\NET\Sesion3\NorthWindSolution\NorthWind.Entity\obj\Debug\NorthWind.Entity.dll
 C:\NET\Sesion3\NorthWindSolution\NorthWind.Entity\obj\Debug\NorthWind.Entity.pdb
 C:\NET\Sesion3\NorthWindSolution\NorthWind.Entity\obj\Debug\NorthWind.Entity.csprojResolveAssemblyReference.cache
+C:\Users\Alumno-CT\Software1\NorthWind.Entity\bin\Debug\NorthWind.Entity.dll
+C:\Users\Alumno-CT\Software1\NorthWind.Entity\bin\Debug\NorthWind.Entity.pdb
+C:\Users\Alumno-CT\Software1\NorthWind.Entity\obj\Debug\NorthWind.Entity.csprojResolveAssemblyReference.cache
+C:\Users\Alumno-CT\Software1\NorthWind.Entity\obj\Debug\NorthWind.Entity.dll
+C:\Users\Alumno-CT\Software1\NorthWind.Entity\obj\Debug\NorthWind.Entity.pdb
