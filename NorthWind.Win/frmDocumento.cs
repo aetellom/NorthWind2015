@@ -16,5 +16,20 @@ namespace NorthWind.Win
         {
             InitializeComponent();
         }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtcantidad_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
