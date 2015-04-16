@@ -53,5 +53,26 @@ namespace NorthWind.Win
             txtruc.Text = e.Apellido;
             otmpCliente = e;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //Boton mostrar formulario Producto
+            frmProducto ofrmProducto = new frmProducto();
+            ofrmProducto.OnProductoSelecccionado += new EventHandler<Entity.TbProductoBE>(MetodoProducto);
+            ofrmProducto.Show();
+        }
+
+        TbProductoBE otmpProducto; //variable temporal
+        void MetodoProducto(Object sender, TbProductoBE e)
+        {
+            txtproducto.Text = e.Descripcion;
+            txtprecio.Text = e.Precio.ToString();
+            otmpProducto = e;
+        }
+
+        private void frmDocumento_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
