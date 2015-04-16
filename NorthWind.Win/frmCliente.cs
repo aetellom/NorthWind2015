@@ -50,7 +50,7 @@ namespace NorthWind.Win
             AgregarClienteaFactura();
         }
 
-        private void dataGridVoew1_KeyDown(object sender, KeyEventArgs e)
+        private void dataGridView1_KeyDown_1(object sender, KeyEventArgs e)
         {
             if (e.KeyData == Keys.Return)
             {
