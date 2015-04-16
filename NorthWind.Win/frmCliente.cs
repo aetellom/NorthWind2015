@@ -14,6 +14,8 @@ namespace NorthWind.Win
 {
     public partial class frmCliente : Form
     {
+        public event EventHandler<TbClienteBE> OnClienteSelecccionado;
+
         public frmCliente()
         {
             InitializeComponent();
@@ -28,5 +30,33 @@ namespace NorthWind.Win
             dataGridView1.SelectionMode = 
                 DataGridViewSelectionMode.FullRowSelect;
         }
+
+        private void AgregarClienteaFactura() 
+        {
+            //Agregar Cliente al formulario Documento
+            int i = dataGridView1.CurrentRow.Index;
+            int codigocliente = Convert.ToInt32(dataGridView1.Rows[i].Cells[0].Value);
+            //Query en LINQ
+            TbClienteBE oCliente = (from item in Lista.ToArray()
+                                    where item.CodCliente == codigocliente
+                                    select item).Single();
+            OnClienteSelecccionado(new object(), oCliente);
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Boton Agregar
+            AgregarClienteaFactura();
+        }
+
+        private void dataGridVoew1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Return)
+            {
+                AgregarClienteaFactura();
+            }
+        }
+
     }
 }

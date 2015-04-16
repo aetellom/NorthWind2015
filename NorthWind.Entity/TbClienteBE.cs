@@ -27,9 +27,9 @@ namespace NorthWind.Entity
         { 
             List<TbClienteBE> clientes = new List<TbClienteBE>();
             clientes.Add(new TbClienteBE(1, "Jose","Garcia"));
-            clientes.Add(new TbClienteBE(1, "Pedro ", "Lopez"));
-            clientes.Add(new TbClienteBE(1, "Antonio", "Perez"));
-            clientes.Add(new TbClienteBE(1, "Jorge", "Leon"));
+            clientes.Add(new TbClienteBE(2, "Pedro ", "Lopez"));
+            clientes.Add(new TbClienteBE(3, "Antonio", "Perez"));
+            clientes.Add(new TbClienteBE(4, "Jorge", "Leon"));
             return clientes;
         }
     }
