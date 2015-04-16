@@ -1,0 +1,11 @@
+git init
+git remote add NorthWind https://github.com/isiltech/Framework.git
+git checkout -b master
+git pull NorthWind master
+git status
+git add .
+git commit -m "Primer commit"
+git push NorthWind master
+git log -p -2
+
+

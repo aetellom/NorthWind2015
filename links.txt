@@ -1,0 +1,23 @@
+Practica 1:
+
+
+1)Modificar la clase TbClienteBE
+public  int  CodCliente { get; set; }
+public string Nombre { get; set; }
+public string RUC { get; set; }
+
+2)Implementar en el formulario Cliente y Producto la opcion de eliminar filas del grid.
+3)Implementar en el formulario Cliente y Producto la funcionalidad de buscar productos o clientes por medio de una caja de texto.
+4) Implementar en el formulario Documento la opcion de validar la caja de texto cantidad para que solo acepte valores numericos.
+
+
+Links:
+
+http://cristiantorresalfaro.blogspot.com/2012/05/pasar-informacion-de-formulario-hijo.html
+http://csharp.net-informations.com/datagridview/deletegridview.htm
+http://www.c-sharpcorner.com/Forums/Thread/206243/how-to-remove-selected-row-in-data-grid-view-C-Sharp.aspx
+http://kartones.net/blogs/sector7g/sintaxis-linq-any-all-y-contains.aspx
+http://codereview.stackexchange.com/questions/63124/linq-query-using-startswith-and-contains-to-limit-the-results-for-an-autocomplet
+http://stackoverflow.com/questions/463299/how-do-i-make-a-textbox-that-only-accepts-numbers
+https://www.daniweb.com/software-development/csharp/threads/411388/validating-for-empty-and-numeric-values-on-windows-form-c
+http://www.codeproject.com/Articles/13922/Validate-user-input-in-Windows-Forms
