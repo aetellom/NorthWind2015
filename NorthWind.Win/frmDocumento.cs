@@ -50,7 +50,7 @@ namespace NorthWind.Win
         void MetodoCliente(Object sender, TbClienteBE e) 
         {
             txtcliente.Text = e.Nombre;
-            txtruc.Text = e.Apellido;
+            txtruc.Text = e.RUC;
             otmpCliente = e;
         }
 
@@ -74,5 +74,15 @@ namespace NorthWind.Win
         {
 
         }
+
+		private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+				(e.KeyChar != '.'))
+			{
+				e.Handled = true;
+			}
+		}
+
     }
 }

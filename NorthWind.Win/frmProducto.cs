@@ -13,8 +13,9 @@ namespace NorthWind.Win
 {
     public partial class frmProducto : Form
     {
-        public event EventHandler<TbProductoBE> OnProductoSelecccionado;
-        
+		public event EventHandler<TbProductoBE> OnProductoSelecccionado;
+		private int rowIndex = 0;
+
         public frmProducto()
         {
             InitializeComponent();
@@ -57,5 +58,25 @@ namespace NorthWind.Win
             //Boton Agregar
             AgregarProductoaFactura();
         }
+
+		private void dataGridView1_CellMouseUp(object sender, DataGridViewCellMouseEventArgs e)
+		{
+			if (e.Button == MouseButtons.Right)
+			{
+				this.dataGridView1.Rows[e.RowIndex].Selected = true;
+				this.rowIndex = e.RowIndex;
+				this.dataGridView1.CurrentCell = this.dataGridView1.Rows[e.RowIndex].Cells[1];
+				this.contextMenuStrip1.Show(this.dataGridView1, e.Location);
+				contextMenuStrip1.Show(Cursor.Position);
+			}
+		}
+
+		private void borrarFilaToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			if (!this.dataGridView1.Rows[this.rowIndex].IsNewRow)
+			{
+				this.dataGridView1.Rows.RemoveAt(this.rowIndex);
+			}
+		}
     }
 }

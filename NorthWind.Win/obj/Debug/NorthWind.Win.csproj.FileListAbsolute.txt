@@ -37,3 +37,4 @@ C:\Users\Alumno-J\Software11\NorthWind.Win\obj\Debug\NorthWind.Win.frmDocumento.
 C:\Users\Alumno-J\Software11\NorthWind.Win\obj\Debug\NorthWind.Win.frmProducto.resources
 C:\Users\Alumno-J\Software11\NorthWind.Win\obj\Debug\NorthWind.Win.Properties.Resources.resources
 C:\Users\Alumno-J\Software11\NorthWind.Win\obj\Debug\NorthWind.Win.csproj.GenerateResource.Cache
+C:\Users\Alumno-CT\Software1\NorthWind.Win\obj\Debug\NorthWind.Win.frmDocumento.resources
